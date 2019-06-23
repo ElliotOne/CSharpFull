@@ -11,6 +11,7 @@ namespace _01_Basic
     {
        void SimpleMethod()
         {
+
             int number = 100;
             string str = "";
             //Convert
