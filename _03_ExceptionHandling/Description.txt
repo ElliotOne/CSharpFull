@@ -1,0 +1,3 @@
+﻿Exception handling help us control the flow of running program
+and if there is an runtime error , bug or such cases handling it
+to let program continue working.

@@ -1,0 +1,11 @@
+﻿Method : functions , it is what we use to DRY!
+
+DRY : don't repeat your self
+
+
+value : copy of data
+refrence : the same data
+
+
+Extension Methods : 
+add methods to types without changing them

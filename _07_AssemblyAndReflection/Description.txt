@@ -1,0 +1,7 @@
+﻿Attribute:
+	provide a powerfull method associating metadata or
+	declarative infomation , with code (assemblies types , methods,properties,etc).
+
+
+Reflections :
+	access to assembly or attributes info at runtime.

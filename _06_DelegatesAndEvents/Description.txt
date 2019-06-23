@@ -1,0 +1,2 @@
+﻿Delegate Vs Method calls:
+delegates are more powerfull and faster than direct method calling

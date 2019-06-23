@@ -1,0 +1,45 @@
+﻿Collection : the series of similar data type. for ex : an array of numbers
+
+Non-Generic Collection :
+used with particular data type for example int , used for type safety
+
+Generic Collection :
+used with different data types for example int , string , bool , etc.
+
+
+
+None Generics :
+		ArrayList :
+		like arrays , they resize automatically.
+		
+		HashTable :
+		key-value pairs based on hash code of the key
+		
+		SortedList :
+		key-value pairs that are sorted by keys by default
+		
+		Stack :
+		LIFO collection , functionalites like : push , pop , ...
+		
+		Queue : 
+		FIFI collection , functionalites like : enqueue , dequeue , ...
+		
+		BitArray :
+		array of 1 and 0
+
+
+
+Generics :
+
+		List : same as ArrayList
+		Dictionary : same as HashTable
+		SortedList : same as SortedList
+		SortedDictionary : a sorted dictionary
+		Stack
+		Queue
+
+
+other collections : KeyValuePairs,NameValueCollection
+
+
+

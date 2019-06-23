@@ -1,0 +1,112 @@
+﻿OOP : object oriented programming
+
+class : a category of objects , define common properties and behaviour of objects.
+object : a particular instance of a class
+method : functions
+property : a member that provide flexible mechanism to read , write , or compute the
+value of private fields.(get/set)
+
+
+
+ex :
+
+					Vechile : class
+					   |
+					   |
+                 |	     	|
+		 	     |		    |
+Wheeled Vechiles:sub class         Non-Wheeled Vechiles:subclass
+		|
+		|
+		BMW X4 Balck : object
+
+
+
+Pillars Of OOP:
+Inheritance : creating new class by extending the exisiting class
+Encapsulation : bindig data members together
+Polymorphism : object or function take different forms
+Abstraction : showing only essential features an object and hide irreleavent information
+
+
+
+
+Encapsulation Access Modifiers :
+Public : Access is not restricted
+Protected : Access is limited to containing class or types derived from the containing class
+Private : Access is limeted to the containing type
+Internal : Access is limited to current assembly
+Protected Internal : Access is limited to the current assembly or types derived from the containing class
+
+
+
+Polymorphism : 
+Static type or compile time : overloading methods
+Dynamic type or run time : overriding , allow to change functionality of methods in child class
+
+
+Abstraction : is a concept or an idea not associared with any specific instance
+
+
+
+Class:
+sealed : can't inherit from sealed a class
+static : can't be instantiated
+partial : split a class to diffrent files
+
+
+
+Struct:
+they are like classes but they are value type(not reference type)
+
+
+Class VS Struct:
+classes can be inherited , sturcts can't.
+classes are refrence type , structs are value type.
+classes can have uesr defined constructors
+
+
+
+Interface: definition for functionalities not implimentaion , 
+much like abstract classes.
+
+
+Interface VS Abstract class :
+both must be implemented all members , can't be instantiated directly,
+can contains events and methods and properties.
+Interfaces can't have method implementaion , allow multiple inheritance , can't
+have access modifiers (all are public) , can't contain variable.
+
+
+NameSpace:
+a container of our classes,to make them categorized, ex : System , System.Linq , ...
+
+
+
+
+Has-A Relationship : use inner classes
+Is-A Relationship : inheritance
+
+
+
+
+Association:
+It is a relationship between objects.
+Usally defined as "is-a" or "using" relationship.
+Both objects have independent life-cycle.
+Each object owns their actions and will not affect other objects.
+
+Aggregaion :
+Specialized form of Association.
+Usually defined as "has-a" relationship.
+Each object has an independent life-cycle.
+Ownership between objects.
+
+Composition : 
+Specialized form of Aggregaion.
+Usually defined as "part-of" realtionship.
+Child object has dependent life-cycle.
+Ownership between objects.
+
+Notes : 
+-When the base (father) class distory , derived (child) will distory too.
