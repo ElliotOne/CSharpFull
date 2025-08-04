@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -43,7 +40,7 @@ namespace _10_AsynchronousProgramming
             t3.Start();
 
 
-            Task.WaitAll(t1,t2,t3);
+            Task.WaitAll(t1, t2, t3);
             //then do sth after all tasks finished
         }
     }

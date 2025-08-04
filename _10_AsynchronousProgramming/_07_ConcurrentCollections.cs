@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Threading;
 namespace _10_AsynchronousProgramming
@@ -16,9 +12,9 @@ namespace _10_AsynchronousProgramming
             Thread t1 = new Thread(() =>
             {
                 Console.WriteLine("Thread 1 has started");
-                for (int i = 0; i <=10 ; i++)
+                for (int i = 0; i <= 10; i++)
                 {
-                    Console.WriteLine("Thread 1 added number "+i);
+                    Console.WriteLine("Thread 1 added number " + i);
                     bag.Add(i);
                 }
                 Console.WriteLine("Thread 1 is complete!");
@@ -43,7 +39,7 @@ namespace _10_AsynchronousProgramming
                 Console.WriteLine("Thread 3 has started");
                 foreach (var item in bag)
                 {
-                    Console.WriteLine("Thread 3 read "+item);
+                    Console.WriteLine("Thread 3 read " + item);
                 }
                 Console.WriteLine("Thread 3 is complete!");
             });

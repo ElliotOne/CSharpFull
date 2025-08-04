@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,7 +8,7 @@ namespace _10_AsynchronousProgramming
     {
         public static void CancelTask()
         {
-            //Canceling Task
+            //Canceling a Task
             CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
             CancellationToken token = cancellationTokenSource.Token;
             Task taskSecond = new Task(() =>

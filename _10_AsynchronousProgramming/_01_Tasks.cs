@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -28,13 +25,13 @@ namespace _10_AsynchronousProgramming
             {
                 Console.WriteLine("Task 3 is starting");
                 Thread.Sleep(1000);
-                Console.WriteLine("Task 3 is compelete");
+                Console.WriteLine("Task 3 is complete");
             });
             task3.Start();
 
 
             //Passing parameter to task
-            Task task4 = new Task(new Action<object>(SayHi), "Ali");
+            Task task4 = new Task(new Action<object>(SayHi), "Elliot");
             task4.Start();
         }
         private static void SayHi()
@@ -48,7 +45,7 @@ namespace _10_AsynchronousProgramming
 
         private static void SayHi(object name)
         {
-            Console.WriteLine("Hello "+name);
+            Console.WriteLine("Hello " + name);
         }
     }
 }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace _10_AsynchronousProgramming
@@ -10,7 +7,7 @@ namespace _10_AsynchronousProgramming
     {
         public static void ReturnValueAndTaskStatus()
         {
-            //Retunring value
+            //Returning value
             Task<int> task = new Task<int>(() =>
             {
                 int result = 0;
@@ -23,6 +20,7 @@ namespace _10_AsynchronousProgramming
 
             task.Start();
             Console.WriteLine("Result=" + task.Result);
+
             //Task Status
             if (task.Status == TaskStatus.Running)
             {
