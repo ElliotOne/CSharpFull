@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _07_AssemblyAndReflection
 {
@@ -10,19 +6,19 @@ namespace _07_AssemblyAndReflection
     {
         void ThisIsMain()
         {
-            Persons.sayHi();
-            Persons.sayHello();
+            Persons.SayHi();
+            Persons.SayHello();
         }
     }
 
     class Persons
     {
         [Obsolete("Use sayHello() instead.")]
-        public static void sayHi()
+        public static void SayHi()
         {
             Console.WriteLine("Old Method");
         }
-        public static void sayHello()
+        public static void SayHello()
         {
             Console.WriteLine("New Method");
         }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _07_AssemblyAndReflection
 {
@@ -10,7 +6,7 @@ namespace _07_AssemblyAndReflection
     {
         void ThisIsMain()
         {
-            //Guid : creating uniq numbers
+            //Guid : Creating uniq identifiers
 
             Guid guid = Guid.NewGuid();
             Console.WriteLine(guid);
