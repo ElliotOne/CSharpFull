@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28729.10
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_OOP", "_02_OOP\_02_OOP.csproj", "{6EBCE4A9-7B19-4A68-B693-8EFE16186478}"
 EndProject
@@ -19,9 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_03_ExceptionHandling", "_0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_ExceptionHandling", "_03_ExceptionHandling\_03_ExceptionHandling.csproj", "{0495A021-2E08-407C-937D-7E38D4B47752}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ZZ_OtherTopics", "_ZZ_OtherTopics", "{4B38158F-97CF-46F7-A9F9-94D96602AD38}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_zz_OtherTopics", "_zz_OtherTopics\_zz_OtherTopics.csproj", "{5C912647-688F-4C12-98FC-66C37D52A5A4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_11_miscellaneous", "_11_miscellaneous", "{4B38158F-97CF-46F7-A9F9-94D96602AD38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_04_Files", "_04_Files", "{79B33DF9-ABB0-479C-ADC3-9B03CAFB29A4}"
 EndProject
@@ -44,15 +42,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_08_Linq", "_08_Linq\_08_Linq.csproj", "{D8A97F99-943F-4405-976E-68067C676E4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_09_Multithreading", "_09_Multithreading", "{4A0EF198-8DB1-4CD8-8EA2-15BFABABC2B6}"
-	ProjectSection(SolutionItems) = preProject
-		_09_Multithreading\Description.txt = _09_Multithreading\Description.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_09_Multithreading", "_09_Multithreading\_09_Multithreading.csproj", "{6C0310F9-A71A-49DC-BC60-ED9E44F52825}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_10_AsynchronousProgramming", "_10_AsynchronousProgramming", "{E894D075-E857-4DD4-902D-2B5274B3CA28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_10_AsynchronousProgramming", "_10_AsynchronousProgramming\_10_AsynchronousProgramming.csproj", "{E04D809D-E53D-4E78-A546-AF9C17C41938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_11_miscellaneous", "_11_miscellaneous\_11_miscellaneous.csproj", "{5C912647-688F-4C12-98FC-66C37D52A5A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,10 +77,6 @@ Global
 		{0495A021-2E08-407C-937D-7E38D4B47752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0495A021-2E08-407C-937D-7E38D4B47752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0495A021-2E08-407C-937D-7E38D4B47752}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10FBDEED-2303-4932-9B8D-5DF2A9801E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10FBDEED-2303-4932-9B8D-5DF2A9801E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10FBDEED-2303-4932-9B8D-5DF2A9801E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -112,6 +105,10 @@ Global
 		{E04D809D-E53D-4E78-A546-AF9C17C41938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E04D809D-E53D-4E78-A546-AF9C17C41938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E04D809D-E53D-4E78-A546-AF9C17C41938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C912647-688F-4C12-98FC-66C37D52A5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,7 +119,6 @@ Global
 		{7A5B758A-BF28-4BD1-A5F3-DE6E6F4B009C} = {C2F3EEDD-D718-474C-9AF8-CD2CBC502499}
 		{DF74C8CE-662F-4571-9484-DDF7E2FFCF57} = {C2F3EEDD-D718-474C-9AF8-CD2CBC502499}
 		{0495A021-2E08-407C-937D-7E38D4B47752} = {846B5F59-29A5-49BB-9977-4AD63851703E}
-		{5C912647-688F-4C12-98FC-66C37D52A5A4} = {4B38158F-97CF-46F7-A9F9-94D96602AD38}
 		{10FBDEED-2303-4932-9B8D-5DF2A9801E80} = {79B33DF9-ABB0-479C-ADC3-9B03CAFB29A4}
 		{D000D1A7-23E3-4E54-A21B-28C6423074E3} = {450D9970-9EB4-436B-BD63-70A2D16A2954}
 		{BAC87C92-740F-4EA2-8042-A83C4750247F} = {92DA7C33-7E39-475D-B85A-946D6C656F80}
@@ -130,6 +126,7 @@ Global
 		{D8A97F99-943F-4405-976E-68067C676E4C} = {1EC28AC2-F532-465D-A98F-22166CC5B720}
 		{6C0310F9-A71A-49DC-BC60-ED9E44F52825} = {4A0EF198-8DB1-4CD8-8EA2-15BFABABC2B6}
 		{E04D809D-E53D-4E78-A546-AF9C17C41938} = {E894D075-E857-4DD4-902D-2B5274B3CA28}
+		{5C912647-688F-4C12-98FC-66C37D52A5A4} = {4B38158F-97CF-46F7-A9F9-94D96602AD38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2458E44F-CB5B-44E0-BD7A-73F8EF3AF932}

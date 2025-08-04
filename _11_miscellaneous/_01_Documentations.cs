@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
     public class _01_Documentations
     {
@@ -17,9 +13,9 @@ namespace _zz_OtherTopics
     }
 
     /// <summary>
-    /// DogCommand is a inteface for the Animal base class.
+    /// DogCommand is a interface for the Animal base class.
     /// </summary>
-    interface DogCommand
+    interface IDogCommand
     {
         void Sit();
         void Sit(string dogName, string trainerName);
@@ -32,7 +28,8 @@ namespace _zz_OtherTopics
     {
 
     }
-    class Dogs : Animal, DogCommand
+
+    class Dogs : Animal, IDogCommand
     {
         /// <summary>
         /// Sit method will make the dog to sit!

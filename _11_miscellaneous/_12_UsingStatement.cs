@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
     class _12_UsingStatement
     {
@@ -17,7 +12,7 @@ namespace _zz_OtherTopics
             //sw.WriteLine("Third line");
             //sw.Close();
 
-            //using , don't need to close or dispose the resource
+            //using: don't need to close or dispose the resource
             using (StreamWriter sw = new StreamWriter("myfile.txt"))
             {
                 sw.WriteLine("First line");

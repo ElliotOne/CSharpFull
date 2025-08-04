@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
     class _13_RefReturnAndRefLocal
     {
+        static string[] names = { "Ella", "Liz", "Eve", "Claire" };
+
         void ThisIsMain()
         {
             int x1 = 3;
@@ -23,14 +21,16 @@ namespace _zz_OtherTopics
             //y2 = 6 too
 
 
-            ref var returnedValue = ref ReturnByRefrence();
+            ref var returnedValue = ref ReturnByReference();
             Console.WriteLine(returnedValue);
 
+            returnedValue = "Elliot";
+            Console.WriteLine(returnedValue);
+            Console.WriteLine(names[0]);
         }
 
-        static ref string ReturnByRefrence()
+        static ref string ReturnByReference()
         {
-            string[] names = { "Ella", "Liz", "Eve", "Claire"};
             return ref names[0];
         }
     }

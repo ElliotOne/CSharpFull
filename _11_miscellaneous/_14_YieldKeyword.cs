@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
-    class _14_YeildKeyword
+    class _14_YieldKeyword
     {
         void ThisIsMain()
         {
-            foreach (var item in PerformMathOperations(10,5))
+            foreach (var item in PerformMathOperations(10, 5))
             {
                 Console.WriteLine(item);
             }
@@ -20,7 +17,7 @@ namespace _zz_OtherTopics
         {
             yield return x + y;
             yield return x * y;
-            yield return Math.Round(((double)x / (double)y),2);
+            yield return Math.Round(((double)x / (double)y), 2);
             yield return x - y;
         }
     }

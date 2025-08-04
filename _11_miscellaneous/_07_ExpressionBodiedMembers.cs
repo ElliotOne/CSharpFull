@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
     class _07_ExpressionBodiedMembers
     {
@@ -27,6 +23,6 @@ namespace _zz_OtherTopics
             set => age = value;
         }
 
-        public ExpressionBodiedClass() => Console.WriteLine("Constarctor is here!");
+        public ExpressionBodiedClass() => Console.WriteLine("Constructor is here!");
     }
 }

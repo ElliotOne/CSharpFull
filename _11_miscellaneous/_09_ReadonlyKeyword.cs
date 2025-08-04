@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _zz_OtherTopics
+﻿namespace _11_miscellaneous
 {
     class _09_ReadonlyKeyword
     {
         void ThisIsMain()
         {
-           
+
         }
     }
     class ReadonlyClassEx

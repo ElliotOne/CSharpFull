@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _11_miscellaneous
 {
     class _08_DynamicKeyword
     {
@@ -14,12 +10,12 @@ namespace _zz_OtherTopics
             Console.WriteLine("Value = " + value);
             value = "Hello";
             Console.WriteLine("Value = " + value);
-            value = new dynamicClassEx();
+            value = new DynamicClassEx();
             value.Name = "Name!";
         }
     }
 
-    class dynamicClassEx
+    class DynamicClassEx
     {
         private string name;
         public string Name
