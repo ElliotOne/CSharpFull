@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -21,7 +17,7 @@ namespace _01_Basic
 
             //Ternary Operator
             //condition ? if true : if false
-            Console.WriteLine(otherMethod() ? "True":"False");
+            Console.WriteLine(otherMethod() ? "True" : "False");
         }
         bool otherMethod()
         {

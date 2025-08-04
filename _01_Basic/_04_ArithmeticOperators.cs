@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01_Basic
+﻿namespace _01_Basic
 {
     public class _04_ArithmeticOperators
     {
@@ -22,7 +16,7 @@ namespace _01_Basic
             //Increment and decrement operators
             int other = 5;
             other++;
-            --other; 
+            --other;
 
 
             //Short format of logical operators

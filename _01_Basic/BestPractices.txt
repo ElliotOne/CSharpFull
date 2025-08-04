@@ -18,7 +18,7 @@ kebab case
 
 
 
-note :
+Note :
 1. readability over breavity (GetProductCode instead of GetProCod)
 2. Avoid long lines of code
 3. Avoid number and special marks in naming

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -18,8 +14,8 @@ namespace _01_Basic
             //Error:
             //int num3 = null;
 
-            //?? : if null the data before ?? , else after 
+            //If the data before ?? is NOT null, use it. Otherwise, use the data after ??.
             Console.WriteLine(num1 ?? 3);
         }
-    } 
+    }
 }

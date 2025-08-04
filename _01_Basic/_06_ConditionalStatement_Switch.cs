@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01_Basic
+﻿namespace _01_Basic
 {
     public class _06_ConditionalStatement_Switch
     {
@@ -12,6 +6,7 @@ namespace _01_Basic
         {
             int x = 4;
             string result = "";
+
             switch (x)
             {
                 case 1: result = "one"; break;
@@ -21,6 +16,15 @@ namespace _01_Basic
                     result = "not 1 , 2 or 3 !";
                     break;
             }
+
+            // Switch Expression
+            string result2 = x switch
+            {
+                1 => "one",
+                2 => "two",
+                3 => "three",
+                _ => "not 1, 2 or 3!"
+            };
         }
     }
 }

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01_Basic
+﻿namespace _01_Basic
 {
     class _18_MultidimensionalArrays
     {
         void SimpleMethod()
         {
             //2D array (matrix)
-            int[,] matrix = new int[9,9];
+            int[,] matrix = new int[9, 9];
+
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
@@ -32,8 +27,6 @@ namespace _01_Basic
                     {"110","111"}
                 }
             };
-
-
         }
     }
 }

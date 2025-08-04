@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -11,13 +7,12 @@ namespace _01_Basic
         void ThisIsMain()
         {
             ASimpleClassOfCars car1 = new ASimpleClassOfCars();
+
             car1.Brand = "B1";
             car1.Model = "M1";
             car1.Price = 100_241;
 
             ASimpleClassOfCars.DisplayCarDetails(car1);
-
-
         }
     }
 
@@ -26,7 +21,7 @@ namespace _01_Basic
         private string carBrand;
         private string carModel;
         private int carPrice;
-        
+
         public string Model
         {
             get => carModel;
@@ -62,7 +57,7 @@ namespace _01_Basic
             //}
 
 
-            //Safe Nabigation Operator
+            //Safe Navigation Operator
             Console.WriteLine(car?.Brand);
             Console.WriteLine(car?.Model);
             Console.WriteLine(car?.Price);

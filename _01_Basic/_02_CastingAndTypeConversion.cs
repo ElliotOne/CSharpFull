@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
     public class _02_CastingAndTypeConversion
     {
-       void SimpleMethod()
+        void SimpleMethod()
         {
-
             int number = 100;
             string str = "";
+
             //Convert
             str = number.ToString();
 

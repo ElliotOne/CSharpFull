@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -22,6 +18,5 @@ namespace _01_Basic
 
             string anotherFormat = string.Format("{0:dd-MM-yyyy HH:mm:ss}", now);
         }
-       
     }
 }

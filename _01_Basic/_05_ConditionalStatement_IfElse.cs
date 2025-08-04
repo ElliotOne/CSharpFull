@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01_Basic
+﻿namespace _01_Basic
 {
     public class _05_ConditionalStatement_IfElse
     {
@@ -35,7 +29,7 @@ namespace _01_Basic
             //}
             //else if(condition2)
             //{
-            //  if condition2 is true
+            //  if condition1 is false and condition2 is true
             //}
             //...
             //else
@@ -57,7 +51,7 @@ namespace _01_Basic
             }
 
 
-            //Nester if else statements
+            //Nested if-else statements
             int a = 2;
             string strResult;
             if (a > 0)

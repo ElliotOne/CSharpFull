@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -18,24 +14,24 @@ namespace _01_Basic
 
             for (int i = 0; i < nums.Length; i++)
             {
-                    Console.WriteLine(nums[i]);              
+                Console.WriteLine(nums[i]);
             }
 
             string[] str = new string[] { "Hello", "World", "FirstName" };
             string[] str2 = { "Hello", "Worl", "LastName" };
 
 
-            //Two demensional
+            //Two dimensional
             int[,] nums2 = new int[3, 2];
             nums2[0, 0] = 00;
             nums2[1, 3] = 13;
-            nums2[3, 2] = 32;
+            //nums2[3, 2] = 32; //Exception: System.IndexOutOfRangeException
 
             for (int i = 0; i < nums2.GetLength(0); i++)
             {
                 for (int j = 0; j < nums2.GetLength(1); j++)
                 {
-                    Console.WriteLine(nums2[i,j]);
+                    Console.WriteLine(nums2[i, j]);
                 }
             }
 

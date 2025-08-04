@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01_Basic
+﻿namespace _01_Basic
 {
     public class _01_DataTypesAndConstant
     {
@@ -15,14 +9,13 @@ namespace _01_Basic
         string str1 = "Hello";
         string str2 = "World";
         char ch = 'A';
-        bool IsHappy = true;
+        bool isHappy = true;
 
-        int MinInt = int.MinValue;
-        double MaxDouble = double.MaxValue;
+        int minInt = int.MinValue;
+        double maxDouble = double.MaxValue;
 
         bool isIntPrimitiveType = typeof(int).IsPrimitive;
 
         const double PI = 3.14;
-
     }
 }

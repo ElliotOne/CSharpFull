@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -15,7 +11,7 @@ namespace _01_Basic
             {
                 Console.WriteLine(i);
                 i++;
-                if (i==8)
+                if (i == 8)
                 {
                     break;
                 }
@@ -24,7 +20,7 @@ namespace _01_Basic
             i = 10;
             while (i > 0)
             {
-                Console.WriteLine(i*2);
+                Console.WriteLine(i * 2);
                 i--;
             }
 

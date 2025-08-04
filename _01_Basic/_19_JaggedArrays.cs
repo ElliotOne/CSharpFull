@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Basic
 {
@@ -11,6 +7,7 @@ namespace _01_Basic
         void SimpleMethod()
         {
             int[][] jaggedArray = new int[3][];
+
             jaggedArray[0] = new int[2] { 14, 42 };
             jaggedArray[1] = new int[4] { 1, 2, 3, 4 };
             jaggedArray[2] = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
