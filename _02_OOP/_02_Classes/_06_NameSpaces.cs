@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 //Add NameSpace
@@ -12,10 +8,10 @@ namespace _02_OOP._02_Classes
 {
     class _06_NameSpaces
     {
-        void anotherMethod()
+        void AnotherMethod()
         {
-            myNameSpace.myCusomeClass myObj = new myNameSpace.myCusomeClass();
-            myCusomeClass myObj2 = new myCusomeClass();
+            myNameSpace.MyCustomClass myObj = new myNameSpace.MyCustomClass();
+            MyCustomClass myObj2 = new MyCustomClass();
             myObj2.SayHi();
         }
     }
@@ -23,9 +19,9 @@ namespace _02_OOP._02_Classes
 
 namespace myNameSpace
 {
-    public class myCusomeClass
+    public class MyCustomClass
     {
-        public string animalColor;
+        public string AnimalColor;
         public void SayHi()
         {
             Console.WriteLine("Hello form myNameSpace!");

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._05_Polymorphism
 {
@@ -13,7 +9,7 @@ namespace _02_OOP._05_Polymorphism
             Console.WriteLine("This is a simple shape!");
         }
     }
-    public class Circle:_01_ShapesExample
+    public class Circle : _01_ShapesExample
     {
         public override void Draw()
         {

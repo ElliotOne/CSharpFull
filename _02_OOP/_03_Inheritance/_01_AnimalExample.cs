@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._03_Inheritance
 {
@@ -13,18 +9,18 @@ namespace _02_OOP._03_Inheritance
         {
             Animal animal = new Animal();
             animal.Name = "ABC";
-            animal.birthDate = DateTime.Now;
+            animal.BirthDate = DateTime.Now;
 
             Birds bird = new Birds();
             bird.Name = "Bird1";
-            bird.birdColor = "Red";
+            bird.Color = "Red";
         }
     }
 
     class Animal
     {
         public string Name { get; set; }
-        public DateTime birthDate { get; set; }
+        public DateTime BirthDate { get; set; }
         public void FeedAnimal()
         {
 
@@ -33,14 +29,14 @@ namespace _02_OOP._03_Inheritance
 
     class Dogs : Animal
     {
-        public string dogBreed { get; set; }
-        public string dogIntelligence { get; set; }
-        public bool isEasyToTrain;
+        public string Breed { get; set; }
+        public string Intelligence { get; set; }
+        public bool IsEasyToTrain;
     }
 
     class Birds : Animal
     {
-        public string birdColor;
-        public string birdCountry;
+        public string Color;
+        public string Country;
     }
 }

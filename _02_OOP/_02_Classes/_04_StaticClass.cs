@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._02_Classes
 {
@@ -14,9 +10,10 @@ namespace _02_OOP._02_Classes
             Console.WriteLine("Hello form static class!");
         }
     }
-    class anotheClass
+
+    class AnotherClass2
     {
-        //Error : can't be instatiated and inherited
+        //Error : can't be instantiated and inherited
         //_04_StaticClass first = new _04_StaticClass();
 
         public void AnotherMethod()

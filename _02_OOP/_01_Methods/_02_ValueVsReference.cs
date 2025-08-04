@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02_OOP._01_Methods
+﻿namespace _02_OOP._01_Methods
 {
-    public class _02_ValueVsRefrence
+    public class _02_ValueVsReference
     {
         void getStringCopy(string str)
         {
             str = "New data won't change str outside method";
         }
 
-        void getStringRefrence(ref string str)
+        void getStringReference(ref string str)
         {
             str = "String will change outside the method";
         }

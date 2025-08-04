@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP
 {
     class _01_CarsExample_Full
     {
         private decimal price;
-        protected int maxSpeed;
-        public string color;
+        protected int MaxSpeed;
+        public string Color;
 
         public decimal Price
         {
@@ -20,22 +16,22 @@ namespace _02_OOP
         public virtual void DisplayInfo()
         {
             price = 10000;
-            maxSpeed = 260;
-            color = "Black";
-            Console.WriteLine($"Default values : price = {price} , max speed = {maxSpeed} , color = {color}");
+            MaxSpeed = 260;
+            Color = "Black";
+            Console.WriteLine($"Default values : price = {price} , max speed = {MaxSpeed} , color = {Color}");
         }
     }
-    
-    class Merceds : _01_CarsExample_Full
+
+    class Mercedes : _01_CarsExample_Full
     {
-        public Merceds(decimal price)
+        public Mercedes(decimal price)
         {
             Price = price;
         }
         public override void DisplayInfo()
         {
             base.DisplayInfo();
-            Console.WriteLine("This is a merced car!");
+            Console.WriteLine("This is a Mercedes car!");
         }
     }
 }

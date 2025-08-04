@@ -1,11 +1,7 @@
-﻿using _02_OOP._02_Classes;
+﻿using System;
+using _02_OOP._02_Classes;
 using _02_OOP._03_Inheritance;
 using _02_OOP._05_Polymorphism;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP_UI
 {
@@ -14,9 +10,11 @@ namespace _02_OOP_UI
         static void Main(string[] args)
         {
             //instantiation
-            person person = new person();
+            Person person = new Person();
+
             //call set on FirstName
-            person.FirstName = "Ali";
+            person.FirstName = "Elliot";
+
             //class get on FirstName
             Console.WriteLine(person.FirstName);
 
@@ -28,7 +26,7 @@ namespace _02_OOP_UI
             car.Color = "Green";
             car.ChangeColor();
 
-            
+
             //Polymorphism
             _01_ShapesExample[] shapes = new _01_ShapesExample[4];
             shapes[0] = new _01_ShapesExample();
@@ -41,7 +39,6 @@ namespace _02_OOP_UI
                     sh.Draw();
                 }
             }
-
 
             //Abstraction
             Lines line = new Lines();

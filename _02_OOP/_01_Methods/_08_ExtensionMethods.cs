@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._01_Methods
 {
@@ -16,7 +12,6 @@ namespace _02_OOP._01_Methods
             string txt = "Hello";
             bool isItNumber = txt.IsNumber();
 
-
             DateTime date = new DateTime(2000, 11, 1);
             string dateString = date.myCunstomDateFormat();
         }
@@ -25,7 +20,7 @@ namespace _02_OOP._01_Methods
 
     static class myCustomeExtension
     {
-        public static bool IsGreater(this int value,int number)
+        public static bool IsGreater(this int value, int number)
         {
             return value > number;
         }

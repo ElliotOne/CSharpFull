@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02_OOP._04_Encapsulation
+﻿namespace _02_OOP._04_Encapsulation
 {
     public class _01_AnimalExample
     {
@@ -13,22 +7,22 @@ namespace _02_OOP._04_Encapsulation
         protected string protectedVariable;
         internal string internalVariable;
 
-        private void privateMethod(){}
-        public void publicMethod(){}
-        protected void protectedMethod(){}
-        internal void internalMethod(){}
+        private void PrivateMethod() { }
+        public void PublicMethod() { }
+        protected void ProtectedMethod() { }
+        internal void InternalMethod() { }
     }
 
-    class Dogs :_01_AnimalExample
+    class Dogs : _01_AnimalExample
     {
         Dogs dog = new Dogs();
         void FeedDog()
         {
-            dog.protectedMethod();
+            dog.ProtectedMethod();
             dog.protectedVariable = "protected";
-            dog.publicMethod();
+            dog.PublicMethod();
             dog.publicVariable = "public";
-            dog.internalMethod();
+            dog.InternalMethod();
             dog.internalVariable = "internal";
         }
     }
@@ -39,8 +33,8 @@ namespace _02_OOP._04_Encapsulation
         void FeedCat()
         {
             animal.publicVariable = "public";
-            animal.publicMethod();
-            animal.internalMethod();
+            animal.PublicMethod();
+            animal.InternalMethod();
             animal.internalVariable = "internal";
         }
     }

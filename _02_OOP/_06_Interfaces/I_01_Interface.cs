@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._06_Interfaces
 {
@@ -12,7 +8,7 @@ namespace _02_OOP._06_Interfaces
         void Sit();
         void Attack();
 
-        string DogName{ get; set; }
+        string Name { get; set; }
     }
 
     public interface IAnimals
@@ -22,15 +18,20 @@ namespace _02_OOP._06_Interfaces
 
     public class Cats
     {
-        public string catName { get; set; }
+        public string CatName { get; set; }
         public string Gender { get; set; }
         public string Color { get; set; }
-        public int runingSpeed { get; set; }
+        public int RunningSpeed { get; set; }
     }
-    public class Dogs : Cats,I_01_Interface 
+    public class Dogs : Cats, I_01_Interface
     {
-        private string dogName;
-        public string DogName { get => dogName; set => dogName = value; }
+        private string name;
+
+        public string Name
+        {
+            get => name;
+            set => name = value;
+        }
 
         public void Attack()
         {

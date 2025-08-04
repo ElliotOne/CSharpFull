@@ -1,33 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._02_Classes
 {
     class _01_Basic
     {
-        class innerClass
+        class InnerClass
         {
             //Inner class
-            class innerClass2
+            class InnerClass2
             {
                 //Another inner class
             }
         }
     }
 
-    class myClass
+    class MyClass
     {
         //This is another class
     }
-    class myClass2
+    class MyClass2
     {
         //This is another class too!
     }
 
-    public class person
+    public class Person
     {
         //fields
         string firstName;
@@ -75,7 +71,7 @@ namespace _02_OOP._02_Classes
             }
         }
 
-        //read only properites : doesn't have "set"
+        //read only properties  : doesn't have "set"
         //write only properties : doesn't have "get"
         public string Country
         {

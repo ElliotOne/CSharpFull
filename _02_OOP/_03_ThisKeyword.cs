@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02_OOP
+﻿namespace _02_OOP
 {
     public class _03_ThisKeyword
     {
@@ -20,14 +14,16 @@ namespace _02_OOP
         string lastName;
         public string Display()
         {
-            //this : the currnent instance of the class
+            //this: the current instance of the class
             return this.firstName + " " + this.lastName;
         }
+        
         public Person()
         {
             firstName = "No FirstName";
             lastName = string.Empty;
         }
+
         //Same name for parameters and fields
         public Person(string lastName)
         {

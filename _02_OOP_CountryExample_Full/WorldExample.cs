@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WorldNameSpace
+﻿namespace WorldNameSpace
 {
     public abstract class World
     {
         private string planetName;
-        private Contienents contienents;
+        private Continents continent;
 
         public string PlanetName
         {
             get { return planetName; }
             set { planetName = value; }
         }
-        public Contienents Contienents
+
+        public Continents Continent
         {
-            get { return contienents; }
-            set { contienents = value; }
+            get { return continent; }
+            set { continent = value; }
         }
     }
 
@@ -27,10 +22,10 @@ namespace WorldNameSpace
     {
         private string countryName;
         private string capital;
-        private Currecncies currecncy;
-        private CountryLanguges countryLanguges;
-        
-        public string CountryName
+        private Currencies currency;
+        private CountryLanguages languages;
+
+        public string Name
         {
             get { return countryName; }
             set { countryName = value; }
@@ -42,16 +37,16 @@ namespace WorldNameSpace
             set { capital = value; }
         }
 
-        public Currecncies Currecncy
+        public Currencies Currency
         {
-            get { return currecncy; }
-            set { currecncy = value; }
+            get { return currency; }
+            set { currency = value; }
         }
 
-        public CountryLanguges CountryLanguges
+        public CountryLanguages CountryLanguages
         {
-            get { return countryLanguges; }
-            set { countryLanguges = value; }
+            get { return languages; }
+            set { languages = value; }
         }
 
         public Country()
@@ -59,62 +54,72 @@ namespace WorldNameSpace
             countryName = "Unknown";
             capital = "Unknown";
         }
+
         public string SayHi()
         {
-            return "Wlcome there ...";
+            return "Welcome there ...";
         }
+
         public string SayHi(string country)
         {
-            return $"Welcome to {country} !";
+            return $"Welcome to {country}!";
         }
     }
 
-    public struct CountryLanguges
+    public struct CountryLanguages
     {
-        private string firstLanguage;
-        private string secondLanguage;
-        public string FirstLanguage
+        private Languages firstLanguage;
+        private Languages secondLanguage;
+
+        public Languages FirstLanguage
         {
             get { return firstLanguage; }
             set { firstLanguage = value; }
         }
 
-        public string SecondLanguage
+        public Languages SecondLanguage
         {
             get { return secondLanguage; }
             set { secondLanguage = value; }
         }
     }
-    public enum Contienents
+
+    public enum Continents
     {
         Asia,
         Africa,
-        Antractica,
+        Antarctica,
         Europe,
         NorthAmerica,
-        SouthAmerica
+        SouthAmerica,
+        Australia
     }
 
-    public enum Currecncies
+    public enum Currencies
     {
-        USD,
-        ELR,
-        GBP,
-        CNY,
-        SEK,
-        PLN,
-        EGP,
-        INR,
-        Rial
+        USD,  // US Dollar
+        EUR,  // Euro
+        GBP,  // British Pound
+        CNY,  // Chinese Yuan
+        JPY,  // Japanese Yen
+        SEK,  // Swedish Krona
+        PLN,  // Polish Zloty
+        EGP,  // Egyptian Pound
+        INR   // Indian Rupee
     }
 
     public enum Languages
     {
         Arabic,
         EnglishUS,
-        Perian,
+        EnglishUK,
+        Japanese,
         Polish,
         Greek,
-        Dutch
+        Dutch,
+        French,
+        Spanish,
+        German,
+        Chinese
     }
 }

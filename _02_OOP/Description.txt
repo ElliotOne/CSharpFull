@@ -45,7 +45,7 @@ Static type or compile time : overloading methods
 Dynamic type or run time : overriding , allow to change functionality of methods in child class
 
 
-Abstraction : is a concept or an idea not associared with any specific instance
+Abstraction : is a concept or an idea not associated with any specific instance
 
 
 
@@ -63,7 +63,7 @@ they are like classes but they are value type(not reference type)
 Class VS Struct:
 classes can be inherited , sturcts can't.
 classes are refrence type , structs are value type.
-classes can have uesr defined constructors
+classes can have user defined constructors
 
 
 

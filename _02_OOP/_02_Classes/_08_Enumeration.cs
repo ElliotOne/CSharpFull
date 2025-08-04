@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02_OOP._02_Classes
+﻿namespace _02_OOP._02_Classes
 {
     class _08_Enumeration
     {
-        public Seasons seasons = Seasons.Fall;
-        public WeekDay weekDay = WeekDay.Saturday;
+        public Seasons Seasons = Seasons.Fall;
+        public WeekDay WeekDay = WeekDay.Saturday;
 
         string day = WeekDay.Friday.ToString();
         int dayNumber = (int)WeekDay.Monday;
@@ -17,12 +11,12 @@ namespace _02_OOP._02_Classes
     enum Seasons
     {
         //indexes start from 0
-        Spring,Summer,Fall,Winter
+        Spring, Summer, Fall, Winter
     }
     enum WeekDay
     {
         Monday,
-        Tuesaday,
+        Tuesday,
         Wednesday,
         Friday,
         Saturday,

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._01_Methods
 {
@@ -14,7 +10,7 @@ namespace _02_OOP._01_Methods
             _01_Basic basicObj = new _01_Basic();
             basicObj.myPublicMethod();
 
-            //Not accessable
+            //Not accessible
             //basicObj.myPrivateMethod();
 
             int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
@@ -26,12 +22,12 @@ namespace _02_OOP._01_Methods
             Console.WriteLine("It's simple method!");
         }
 
-        int Sum(int a , int b)
+        int Sum(int a, int b)
         {
             return a + b;
         }
-        
-        double Sub(double a,double b)
+
+        double Sub(double a, double b)
         {
             return a - b;
         }
@@ -54,6 +50,7 @@ namespace _02_OOP._01_Methods
                 return result;
             }
 
+            otherFunc(10);
             Console.WriteLine("Hello World");
         }
 
@@ -64,8 +61,8 @@ namespace _02_OOP._01_Methods
                 //do sth
             }
         }
-        
-        //Access modifiers (public , private , internal)
+
+        //Access modifiers: "public" , "private" , and "internal"
         public void myPublicMethod()
         {
 

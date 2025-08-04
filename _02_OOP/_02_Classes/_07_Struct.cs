@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_OOP._02_Classes
 {
@@ -12,16 +8,16 @@ namespace _02_OOP._02_Classes
         {
             Employee emp = new Employee();
             emp.Salary = 1000;
-            emp.fullName = "AliMomenzadeh";
-            emp.jobTittle = "Programmer";
+            emp.FullName = "Elliot One";
+            emp.JobTittle = "Programmer";
             Console.WriteLine($"Salary = {emp.Salary}");
         }
     }
 
     struct Employee
     {
-        public string fullName;
-        public string jobTittle;
+        public string FullName;
+        public string JobTittle;
         private decimal salary;
         public decimal Salary
         {
