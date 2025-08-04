@@ -1,34 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _06_DelegatesAndEvents
 {
-    delegate void displayInfoDel();
-    delegate void displayInfoByNumberDel(int number);
+    delegate void DisplayInfoDel();
+    delegate void DisplayInfoByNumberDel(int number);
+
     class _03_AnonymousMethod
     {
         void ThisIsMain()
         {
             //Anonymous Method
-            displayInfoDel displayInfo = delegate
+            DisplayInfoDel displayInfo = delegate
             {
                 Console.WriteLine("Hello from anonymous method");
             };
 
-            
+
             displayInfo();
 
-            displayInfoByNumberDel displayInfoByNum = delegate (int number)
+            DisplayInfoByNumberDel DisplayInfoByNum = delegate (int number)
             {
-                Console.WriteLine(number + " from anonymouse method");
+                Console.WriteLine(number + " from Anonymous method");
             };
 
-            
-            displayInfoByNum(2);
 
+            DisplayInfoByNum(2);
         }
     }
 }

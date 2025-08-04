@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _06_DelegatesAndEvents
 {
@@ -12,13 +8,13 @@ namespace _06_DelegatesAndEvents
         {
             //Func return value
             Func<int, int, int> func1 = AddTwoNums;
-            Console.WriteLine(AddTwoNums(3,10));
+            Console.WriteLine(AddTwoNums(3, 10));
 
             //Action don't return value
-            Action<int> action = displayInfo;
+            Action<int> action = DisplayInfo;
             action(12);
 
-            Action action2 = displayInfo;
+            Action action2 = DisplayInfo;
             action2();
 
             //Predicate return bool value
@@ -26,13 +22,13 @@ namespace _06_DelegatesAndEvents
             Console.WriteLine(condition(19));
 
 
-            //Anonymouse method and Lamda expression
-            Func<string, string> converToUpperCase = delegate (string name)
+            //Anonymous method and Lambda expression
+            Func<string, string> convertToUpperCase = delegate (string name)
             {
                 return name.ToUpper();
             };
 
-            Func<string, string> converToUpperCase2 = name => name.ToUpper();
+            Func<string, string> convertToUpperCase2 = name => name.ToUpper();
 
             Action showMessage = delegate
             {
@@ -41,7 +37,6 @@ namespace _06_DelegatesAndEvents
 
             Action<int> showMessage2 = (int m) => Console.WriteLine(m);
             showMessage2(9);
-
         }
 
         public static int AddTwoNums()
@@ -52,19 +47,19 @@ namespace _06_DelegatesAndEvents
             z = x + y;
             return z;
         }
-        public static int AddTwoNums(int x , int y)
+        public static int AddTwoNums(int x, int y)
         {
             return x + y;
         }
 
-        public static void displayInfo(int number)
+        public static void DisplayInfo(int number)
         {
             Console.WriteLine(number);
         }
 
-        public static void displayInfo()
+        public static void DisplayInfo()
         {
-            Console.WriteLine("Hello Wrold");
+            Console.WriteLine("Hello World");
         }
 
         public static bool IsAdmin(int empNum)

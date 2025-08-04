@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _06_DelegatesAndEvents
 {
-    public delegate void myDelegate(string name);
+    public delegate void MyDelegate(string name);
+
     class _06_Events
     {
-        public event myDelegate myEvent;
+        public event MyDelegate MyEvent;
 
         private DisplayInformation displayInformation;
         public _06_Events()
         {
-            myEvent += new myDelegate(sayHi);
-            myEvent += new myDelegate(sayHi2);
+            MyEvent += new MyDelegate(sayHi);
+            MyEvent += new MyDelegate(sayHi2);
 
             displayInformation = new DisplayInformation();
             displayInformation.DisplayDateAfterEvent += DisplayHello;
@@ -29,7 +26,7 @@ namespace _06_DelegatesAndEvents
         public void ThisIsMain()
         {
             _06_Events myObj = new _06_Events();
-            myObj.myEvent("Hello");
+            myObj.MyEvent("Hello");
         }
 
         public void sayHi(string name)
@@ -48,17 +45,29 @@ namespace _06_DelegatesAndEvents
         public delegate void DisplayDateAfterDelegate();
         public event DisplayDateAfterDelegate DisplayDateAfterEvent;
 
-        public void displayClub(string clubName,string country)
+        public void DisplayClub(string clubName, string country)
         {
             Console.WriteLine($"{clubName} from {country}");
-            DisplayDateAfterEvent();
+
+            if (DisplayDateAfterEvent != null)
+            {
+                DisplayDateAfterEvent();
+            }
+
+            //or use the below syntax:
+            //DisplayDateAfterEvent?.Invoke();
+
             Console.WriteLine();
         }
 
-        public void displayPlayer(string playerName,string clubName)
+        public void DisplayPlayer(string playerName, string clubName)
         {
             Console.WriteLine($"{playerName} from {clubName}");
-            DisplayDateAfterEvent();
+
+            if (DisplayDateAfterEvent != null)
+            {
+                DisplayDateAfterEvent();
+            }
         }
     }
 }
