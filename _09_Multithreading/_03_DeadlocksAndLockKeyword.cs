@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _09_Multithreading
 {
@@ -11,22 +7,25 @@ namespace _09_Multithreading
     {
         public static void StartReadAndWrite()
         {
+            int count = 10;
+
             Files file = new Files();
-            Thread[] threads = new Thread[10];
-            for (int i = 0; i < 10; i++)
+            Thread[] threads = new Thread[count];
+            for (int i = 0; i < count; i++)
             {
                 threads[i] = new Thread(new ParameterizedThreadStart(file.Write));
                 threads[i].Start($"c:\\account{i}.txt");
             }
         }
     }
+
     class Files
     {
-        public object thisLock = new object();
+        public object ThisLock = new object();
         public void Write(object path)
         {
             //only one thread accessing locked block at the same time
-            //lock(thisLock)
+            //lock(ThisLock)
             //{
             //    Console.WriteLine("Writing in " + path);
             //    Thread.Sleep(2000);

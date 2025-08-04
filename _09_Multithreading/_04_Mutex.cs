@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _09_Multithreading
 {
     class _04_Mutex
     {
-        private static Mutex mut = new Mutex();
+        private static readonly Mutex Mut = new Mutex();
         public static void StartProcess()
         {
             for (int i = 0; i < 5; i++)
@@ -33,15 +29,15 @@ namespace _09_Multithreading
         private static void UseResource()
         {
             Console.WriteLine($"{Thread.CurrentThread.Name} is requesting the mutex.");
-            mut.WaitOne();
+            Mut.WaitOne();
 
-            Console.WriteLine($"{Thread.CurrentThread.Name} has enterd the critical section.");
+            Console.WriteLine($"{Thread.CurrentThread.Name} has entered the critical section.");
             Thread.Sleep(10000);
+
             Console.WriteLine($"{Thread.CurrentThread.Name} is leaving the critical section.");
-            mut.ReleaseMutex();
+            Mut.ReleaseMutex();
 
             Console.WriteLine($"{Thread.CurrentThread.Name} has released the mutex.");
-
         }
     }
 }

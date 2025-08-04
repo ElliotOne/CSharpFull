@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _09_Multithreading
 {
     class _01_Basic
     {
-        static Thread t1;
-        static Thread t2;
+        static Thread _t1;
+        static Thread _t2;
 
         public static void StartThreads()
         {
-            t1 = new Thread(new ThreadStart(SayHi));
-            t1.Name = "Thread 1 (SayHi)";
-            t1.Start();
+            _t1 = new Thread(new ThreadStart(SayHi));
+            _t1.Name = "Thread 1 (SayHi)";
+            _t1.Start();
 
-            t2 = new Thread(new ThreadStart(SayHi2));
-            t2.Name = "Thread 2 (SayHi2)";
-            t2.Start();
+            _t2 = new Thread(new ThreadStart(SayHi2));
+            _t2.Name = "Thread 2 (SayHi2)";
+            _t2.Start();
 
 
             Thread t3 = new Thread(new ThreadStart(() => Console.WriteLine("Hello form lambda expression")));
@@ -38,15 +34,16 @@ namespace _09_Multithreading
         public static void SayHi()
         {
             Console.WriteLine("Starting to execute " + Thread.CurrentThread.Name);
+
             for (int i = 0; i < 50; i++)
             {
                 //Thread.Sleep(500);
                 //if (i == 40)
                 //{
                 //    Console.WriteLine("Exiting thread 1 ....");
-                //    t1.Abort();
+                //    _t1.Abort();
                 //}
-                t2.Join();
+                _t2.Join();
                 Console.WriteLine("Hi ...");
             }
         }
@@ -54,6 +51,7 @@ namespace _09_Multithreading
         public static void SayHi2()
         {
             Console.WriteLine("Starting to execute " + Thread.CurrentThread.Name);
+
             for (int i = 0; i < 50; i++)
             {
                 Thread.Sleep(new TimeSpan(0, 0, 1));
