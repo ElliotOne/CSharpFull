@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _12_UsingStatement
     {

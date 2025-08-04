@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _14_YieldKeyword
     {

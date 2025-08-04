@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _05_StopWatch
     {

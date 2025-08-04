@@ -2,8 +2,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AssemblyTitle>_11_miscellaneous</AssemblyTitle>
-    <Product>_11_miscellaneous</Product>
+    <AssemblyTitle>_11_Miscellaneous</AssemblyTitle>
+    <Product>_11_Miscellaneous</Product>
     <Copyright>Copyright ©  2019</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>

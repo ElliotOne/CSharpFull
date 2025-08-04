@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     public class _01_Documentations
     {

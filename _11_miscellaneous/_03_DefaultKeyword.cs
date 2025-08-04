@@ -1,4 +1,4 @@
-﻿namespace _11_miscellaneous
+﻿namespace _11_Miscellaneous
 {
     class _03_DefaultKeyword
     {

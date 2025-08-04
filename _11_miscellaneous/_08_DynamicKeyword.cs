@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _08_DynamicKeyword
     {

@@ -2,7 +2,7 @@
 
 //Here !
 using static System.Math;
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _10_StaticDirectives
     {

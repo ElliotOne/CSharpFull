@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_miscellaneous
+namespace _11_Miscellaneous
 {
     class _11_PreprocessorDirectives
     {
