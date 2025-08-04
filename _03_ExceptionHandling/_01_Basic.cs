@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03_ExceptionHandling
 {
@@ -11,10 +7,9 @@ namespace _03_ExceptionHandling
     {
         string Divide(int a, int b)
         {
-            double result;
             try
             {
-                result =(double) a / b;
+                var result = (double)a / b;
                 return result.ToString();
             }
             catch (Exception ex)
@@ -28,19 +23,19 @@ namespace _03_ExceptionHandling
             FileStream fs = new FileStream(@"C:\Data.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
             string text = string.Empty;
-            startAgain:
+        //startAgain:
             try
             {
-                text=sr.ReadToEnd();
+                text = sr.ReadToEnd();
             }
             catch (FileNotFoundException ex)
             {
                 text = $"Oops,we couldn't find the file.Help Link : {ex.HelpLink}";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 text = $"Opps,{ex.Message}";
-                goto startAgain;
+                //goto startAgain; // Avoid using goto it can cause logical deadlock
             }
             finally
             {
