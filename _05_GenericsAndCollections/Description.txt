@@ -30,7 +30,6 @@ None Generics :
 
 
 Generics :
-
 		List : same as ArrayList
 		Dictionary : same as HashTable
 		SortedList : same as SortedList

@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _05_GenericsAndCollections.NonGeneric
+namespace _05_GenericsAndCollections
 {
     class _03_SortedList
     {
         void NonGenericSortedList()
         {
             SortedList list = new SortedList();
+
             list.Add(1, "Hello");
-            list.Add(3, "World");
+            list.Add("a", "World");
             list.Add(2, "Data");
             list.Add(-10, "Computer");
             list.Add(6, "Programming");
-
 
             foreach (var item in list)
             {
@@ -33,9 +30,11 @@ namespace _05_GenericsAndCollections.NonGeneric
         void GenericSortedList()
         {
             SortedList<int, string> list = new SortedList<int, string>();
+
             list.Add(2, "Hello");
             list.Add(3, "World");
-            list.Add(1, "Ali!");
+            list.Add(1, "Elliot!");
+
             foreach (var item in list)
             {
                 Console.WriteLine(item.Value);

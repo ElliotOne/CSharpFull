@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _zz_OtherTopics
+namespace _05_GenericsAndCollections
 {
     class _14_IEnumerableAndIEnumerator
     {
@@ -12,6 +10,7 @@ namespace _zz_OtherTopics
         {
             IEnumerable<int> result = from value in Enumerable.Range(1, 10)
                                       select value;
+
             foreach (var val in result)
             {
                 Console.WriteLine(val);
@@ -36,8 +35,10 @@ namespace _zz_OtherTopics
 
 
             IEnumerator<int> enumerator = numbersList.GetEnumerator();
+
             //foreach (var item in enumerator)
             //{ }
+
             while (enumerator.MoveNext())
             {
                 Console.WriteLine(enumerator.Current);
