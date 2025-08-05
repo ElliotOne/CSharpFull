@@ -1,3 +1,6 @@
-﻿Exception handling help us control the flow of running program
-and if there is an runtime error , bug or such cases handling it
-to let program continue working.
+﻿Exception Handling
+------------------
+
+Exception handling helps control the flow of a running program.  
+It allows the program to catch runtime errors, bugs, or unexpected situations,  
+and handle them gracefully so that the program can continue working without crashing.

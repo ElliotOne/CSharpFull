@@ -1,7 +1,13 @@
-﻿Attribute:
-	provide a powerfull method associating metadata or
-	declarative infomation , with code (assemblies types , methods,properties,etc).
+﻿Attribute
+---------
 
+Provides a powerful way to associate metadata or declarative information  
+with code elements such as assemblies, types, methods, properties, etc.
 
-Reflections :
-	access to assembly or attributes info at runtime.
+---
+
+Reflection
+----------
+
+Allows access to assembly and attribute information at runtime.  
+Enables inspection of metadata, types, methods, and properties dynamically.

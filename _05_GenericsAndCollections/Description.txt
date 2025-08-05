@@ -1,44 +1,52 @@
-﻿Collection : the series of similar data type. for ex : an array of numbers
+﻿Collections
+===========
 
-Non-Generic Collection :
-used with particular data type for example int , used for type safety
+Definition:
+A collection is a series of similar data types.  
+Example: An array of numbers.
 
-Generic Collection :
-used with different data types for example int , string , bool , etc.
+---
 
+Non-Generic Collections:
+- Used with a particular data type (e.g., int) for type safety.
 
+Common Non-Generic Collections:
+- ArrayList:
+    - Similar to arrays but automatically resizes.
+- Hashtable:
+    - Stores key-value pairs based on the hash code of the key.
+- SortedList:
+    - Stores key-value pairs sorted by keys by default.
+- Stack:
+    - Last In First Out (LIFO) collection.
+    - Operations: Push, Pop, etc.
+- Queue:
+    - First In First Out (FIFO) collection.
+    - Operations: Enqueue, Dequeue, etc.
+- BitArray:
+    - Array of bits (1s and 0s).
 
-None Generics :
-		ArrayList :
-		like arrays , they resize automatically.
-		
-		HashTable :
-		key-value pairs based on hash code of the key
-		
-		SortedList :
-		key-value pairs that are sorted by keys by default
-		
-		Stack :
-		LIFO collection , functionalites like : push , pop , ...
-		
-		Queue : 
-		FIFI collection , functionalites like : enqueue , dequeue , ...
-		
-		BitArray :
-		array of 1 and 0
+---
 
+Generic Collections:
+- Can be used with different data types like int, string, bool, etc.
 
+Common Generic Collections:
+- List<T>:
+    - Similar to ArrayList but type-safe.
+- Dictionary<TKey, TValue>:
+    - Similar to Hashtable but generic and type-safe.
+- SortedList<TKey, TValue>:
+    - Similar to SortedList but generic.
+- SortedDictionary<TKey, TValue>:
+    - A sorted dictionary with generic key-value pairs.
+- Stack<T>:
+    - Generic version of Stack.
+- Queue<T>:
+    - Generic version of Queue.
 
-Generics :
-		List : same as ArrayList
-		Dictionary : same as HashTable
-		SortedList : same as SortedList
-		SortedDictionary : a sorted dictionary
-		Stack
-		Queue
+---
 
-
-other collections : KeyValuePairs,NameValueCollection
-
-
-
+Other Collections:
+- KeyValuePair<TKey, TValue>
+- NameValueCollection

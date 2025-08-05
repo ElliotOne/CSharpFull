@@ -1,0 +1,47 @@
+﻿Naming Conventions for Types
+============================
+
+Common Naming Styles
+--------------------
+
+Example phrase: "I Love Programming"
+Example phrase: "First Name"
+
+camelCase:
+    iLoveProgramming
+    firstName
+
+PascalCase (Upper Camel Case):
+    ILoveProgramming
+    FirstName
+
+snake_case:
+    i_love_programming
+    first_name
+
+kebab-case:
+    i-love-programming
+    first-name
+
+
+Best Practices
+--------------
+
+1. Prioritize readability over brevity
+   - Use clear and descriptive names.
+   - Example: 
+     ✔️ GetProductCode
+     ✖️ GetProCod
+
+2. Keep lines concise
+   - Avoid overly long names or code that impacts readability.
+
+3. Avoid numbers and special characters in names
+   - Example:
+     ✖️ get_user_data_2!
+     ✔️ getUserData
+
+4. Don’t use reserved keywords or misleading names
+   - Example:
+     ✖️ class, object, String
+     ✔️ userClass, responseObject, customString

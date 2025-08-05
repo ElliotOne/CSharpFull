@@ -1,2 +1,12 @@
-﻿Delegate Vs Method calls:
-delegates are more powerfull and faster than direct method calling
+﻿Delegate vs Method Calls
+-----------------------
+
+- A method call directly invokes a specific function.
+- A delegate is a type-safe function pointer that can reference one or more methods.
+- Delegates provide flexibility by allowing methods to be assigned and called dynamically.
+- However, delegate calls typically have a slight overhead compared to direct method calls.
+- Delegates are powerful for implementing callbacks, events, and designing extensible systems.
+
+Summary:
+- Direct method calls are generally faster.
+- Delegates are more flexible and enable dynamic method invocation.
