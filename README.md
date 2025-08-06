@@ -167,7 +167,7 @@ Object-Oriented Programming with examples and subfolders.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/CSharpFull.git
+   git clone https://github.com/ElliotOne/CSharpFull.git
    cd CSharpFull
 
 2. Open the solution in Visual Studio or JetBrains Rider.
